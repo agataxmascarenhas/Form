@@ -1,8 +1,16 @@
+:root {
+  --color-text-primary: #002324;
+  --color-text-secondary: #fff;
+  --color-primary: #fd990b;
+  --color-secondary: antiquewhite;
+}
+
 body {
   font-family: "Open-sans", sans-serif;
   background-color: #fd990b;
   margin-top: 40px;
   margin-bottom: 40px;
+  color: var(--color-text-primary);
 }
 
 img {
@@ -18,13 +26,32 @@ form {
   margin: auto;
 }
 
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
 input {
   margin-bottom: 20px;
+  box-shadow: 0 8px 6px -6px #555;
+  border-radius: 50px;
 }
 
 h1,
 #top {
   text-align: center;
+}
+
+select {
+  border-radius: 50px;
+  box-shadow: 0 8px 6px -6px #555;
+}
+
+textarea {
+  border-radius: 20px;
+  box-shadow: 0 8px 6px -6px #555;
+  padding: 15px;
 }
 
 .content {
@@ -33,4 +60,19 @@ h1,
   border-radius: 20px;
   padding: 20px;
   margin: auto;
+}
+
+button {
+  color: var(--color-primary); /*cor do texto do botao*/
+  border: 2px solid var(--color-primary);
+  border-radius: 50px;
+  margin-top: 20px;
+  box-shadow: 0 8px 6px -6px #555;
+  padding: 5px;
+  background-color: var(--color-text-secondary);
+}
+
+button:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
