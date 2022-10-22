@@ -5,16 +5,27 @@
   --color-secondary: antiquewhite;
 }
 
+/* styles reset - usar border-box width=content+padding+border */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open-sans", sans-serif;
   background-color: #fd990b;
   margin-top: 40px;
   margin-bottom: 40px;
   color: var(--color-text-primary);
+  cursor: url(./assets/icons8-leão-32.png), auto;
 }
 
 img {
   max-width: 600px;
+}
+
+h1,
+#top {
+  text-align: center;
 }
 
 form {
@@ -26,45 +37,56 @@ form {
   margin: auto;
 }
 
-label {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 500;
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input:hover {
+  border-color: var(--color-primary);
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
 }
 
 input {
-  margin-bottom: 20px;
   box-shadow: 0 8px 6px -6px #555;
   border-radius: 50px;
-}
-
-h1,
-#top {
-  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 60%;
 }
 
 select {
   border-radius: 50px;
   box-shadow: 0 8px 6px -6px #555;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-width: medium;
+}
+
+select:hover {
+  border-color: var(--color-primary);
 }
 
 textarea {
   border-radius: 20px;
   box-shadow: 0 8px 6px -6px #555;
   padding: 15px;
+  border-width: medium;
+  width: 50%;
 }
 
-.content {
-  background-color: antiquewhite;
-  max-width: 600px;
-  border-radius: 20px;
-  padding: 20px;
-  margin: auto;
+textarea:hover {
+  border-color: var(--color-primary);
 }
 
 button {
   color: var(--color-primary); /*cor do texto do botao*/
-  border: 2px solid var(--color-primary);
+  border: 3px solid var(--color-primary);
   border-radius: 50px;
   margin-top: 20px;
   box-shadow: 0 8px 6px -6px #555;
