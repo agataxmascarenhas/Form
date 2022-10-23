@@ -22,77 +22,79 @@
     <section id="main">
       <h1>Let's go Exploring - Complete the Form!</h1>
 
-      <form class="form-content" action="story.html" method="GET">
-        <label for="animal1">Animal 1:</label>
-        <input
-          type="text"
-          id="animal1"
-          name="animal1"
-          placeholder="Write an animal that lives in the cold..."
-          class="form-input"
-        />
-        <label for="color1">Color:</label>
-        <input
-          type="text"
-          id="color1"
-          name="color1"
-          placeholder="Write your favorite color..."
-          class="form-input"
-        />
-        <label for="element1">Element:</label>
-        <input
-          type="text"
-          id="element1"
-          name="element1"
-          placeholder="Write a mean of transport..."
-          class="form-input"
-        />
-        <label for="animal2">Animal 2:</label>
-        <input
-          type="text"
-          id="animal2"
-          name="animal2"
-          placeholder="Write another animal..."
-          class="form-input"
-        />
-        <label for="greeting">Greeting:</label>
-        <input
-          type="text"
-          id="greeting"
-          name="greeting"
-          placeholder="Write a greeting..."
-          class="form-input"
-        />
-        <label for="num">Number:</label>
-        <input
-          type="number"
-          id="num"
-          name="num"
-          min="1"
-          placeholder="Write a number..."
-          class="form-input"
-        />
-        <label for="how">I prefer to:</label>
-        <select name="how" id="how">
-          <option value="flew✈️">Fly</option>
-          <option value="climbed up🧗">Climb</option>
-          <option value="walked🚶‍♀️">Walk</option>
-        </select>
+      <form action="story.html" method="GET">
+        <div class="form-content">
+          <label for="animal1">Animal 1:</label>
+          <input
+            type="text"
+            id="animal1"
+            name="animal1"
+            placeholder="Write an animal that lives in the cold..."
+            class="form-input"
+          />
+          <label for="color1">Color:</label>
+          <input
+            type="text"
+            id="color1"
+            name="color1"
+            placeholder="Write your favorite color..."
+            class="form-input"
+          />
+          <label for="element1">Element:</label>
+          <input
+            type="text"
+            id="element1"
+            name="element1"
+            placeholder="Write a mean of transport..."
+            class="form-input"
+          />
+          <label for="animal2">Animal 2:</label>
+          <input
+            type="text"
+            id="animal2"
+            name="animal2"
+            placeholder="Write another animal..."
+            class="form-input"
+          />
+          <label for="greeting">Greeting:</label>
+          <input
+            type="text"
+            id="greeting"
+            name="greeting"
+            placeholder="Write a greeting..."
+            class="form-input"
+          />
+          <label for="num">Number:</label>
+          <input
+            type="number"
+            id="num"
+            name="num"
+            min="1"
+            placeholder="Choose a number..."
+            class="form-input"
+          />
+          <label for="how">I prefer to:</label>
+          <select name="how" id="how">
+            <option value="flew✈️">Fly</option>
+            <option value="climbed up🧗">Climb</option>
+            <option value="walked🚶‍♀️">Walk</option>
+          </select>
 
-        <label for="message">Meaningful Message:</label>
+          <label for="message">Meaningful Message:</label>
 
-        <textarea
-          id="message"
-          name="message"
-          rows="8"
-          cols="40"
-          placeholder="Write here..."
-          maxlength="200"
-        ></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            cols="40"
+            placeholder="Write here..."
+            maxlength="200"
+          ></textarea>
 
-        <button type="submit" value="submit" onclick="getData()">
-          Form My Story
-        </button>
+          <button type="submit" value="submit" onclick="getData()">
+            Form My Story
+          </button>
+        </div>
       </form>
     </section>
     <script>
